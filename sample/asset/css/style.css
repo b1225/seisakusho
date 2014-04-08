@@ -1,0 +1,662 @@
+/*style.css*/
+
+/* @charset "utf-0"; */
+/* @charset "utf-1"; */
+/* @charset "utf-2"; */
+/* @charset "utf-3"; */
+/* @charset "utf-4"; */
+/* @charset "utf-5"; */
+/* @charset "utf-6"; */
+/* @charset "utf-7"; */
+@charset "utf-8";
+/* @charset "utf-9"; */
+
+/* ------------------------------------------------------------------------------------------ */
+/* Reset-CSS */
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ul,ol,dl,li,dt,dd,p{
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol{
+	list-style-type: none;
+}
+
+em,strong{
+	font-weight: normal;
+	font-style: normal;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+/* General-CSS */
+
+body, form{
+	min-width: 300px;
+	background-color: #EEE;
+	font-size: 16px;
+	line-height: 160%;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+/* ScreenSize-CSS */
+/*
+	= スマートフォン
+					Min 	Max
+		縦
+			Width
+			Height
+		横
+			Width
+			Height
+
+	= タブレット
+					Min 	Max
+		縦
+			Width
+			Height
+		横
+			Width
+			Height
+
+	= PC
+					Min 	Max
+		縦
+			Width
+			Height
+		横
+			Width
+			Height
+
+*/
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ========================================================================================== */
+/* <header>, <footer>, <form>*/
+/* ========================================================================================== */
+
+/* ------------------------------------------------------------------------------------------ */
+/* GrovalHeader-CSS */
+
+#grobalHeader{
+	width: 100%;
+	height: 50px;
+	background-color: #FFF;
+	overflow: hidden;
+	overflow-y: hidden;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+#grobalNavigation{
+	width: 100%;
+}
+
+/* -- */
+
+#serviceName{
+	width: 200px;
+	height: 50px;
+}
+
+#serviceName h1{
+	display: block;
+	width: 200px;
+	height: 50px;
+}
+
+#serviceName a{
+	display: block;
+	padding: 15px;
+	width: 170px;
+	height: 20px;
+}
+
+#serviceName a img{
+	display: block;
+	width: 170px;
+	height: 20px;
+	line-height: 20px;
+}
+
+/* -- */
+
+#grobalSearch{
+	height: 50px;
+}
+
+#grobalSearchKeyWordInput{
+	display: block;
+	background-color: rgba(200, 200, 200, 0.7);
+	width: 250px;
+	border: none;
+	height: 50px;
+	padding: 5px 10px;
+}
+
+#grobalSearchKeyWordInput:focus{
+	outline: none;
+	color: #EEE;
+	background-color: rgba(100,100,100,0.8);
+}
+
+#grobalSearchSubmitButton{
+	top: 0; /* Bootstrapからの逆襲 */
+	display: block;
+	padding: 15px;
+	line-height: 20px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #333;
+	color: #EEE;
+	cursor: pointer;
+}
+
+#grobalSearchSubmitButton:hover{
+	background-color: #444;
+}
+
+#grobalSearchSubmitButton:active{
+	background-color: #555;	
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+/* GrovalFooter-CSS */
+
+#grobalFooter{
+	width: 99%;
+	margin: auto;
+	height: 100px;
+	border-top: 1px #CCC solid;
+	padding-left: 4px;
+}
+
+#grobalFooterNavigation{
+	display: block;
+	padding-top: 10px;
+}
+
+#grobalFooterNavigation ul{
+	font-size: 90%;
+	color: #999;
+}
+
+#grobalFooterNavigation ul li{
+	padding: 0px 10px;
+	min-width: 60px;
+	text-align: center;
+	border-right: solid 1px #CCC;
+}
+
+#grobalFooterNavigation ul li:first-child{
+	/*border-left: solid 1px #CCC;	*/
+}
+
+#grobalFooterCopyRight{
+	color: #999;
+	font-size: 80%;
+	padding-right: 3em;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+/* Form-CSS */
+
+form.seisakushoForm{
+	margin: 0;
+	padding: 0;
+}
+
+form.seisakushoForm fieldset{
+	
+}
+
+form.seisakushoForm legend{
+	
+}
+
+form.seisakushoForm label{
+	
+}
+
+form.seisakushoForm input[type=text]{
+	
+}
+
+form.seisakushoForm textarea{
+	
+}
+
+form.seisakushoForm select{
+	
+}
+
+form.seisakushoForm option{
+	
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ========================================================================================== */
+/* <article> */
+/* ========================================================================================== */
+
+.page-content{
+	padding: 50px 0px;
+}
+
+.page-content .main
+.page-content .sub,{
+	min-height: 400px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* WorksList-CSS */
+
+.workList{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.workUnit *{
+/*	-webkit-transition: height .5s ease 0s, width .5s ease 0s;
+	   -moz-transition: height .5s ease 0s, width .5s ease 0s;
+	    -ms-transition: height .5s ease 0s, width .5s ease 0s;
+	     -o-transition: height .5s ease 0s, width .5s ease 0s;
+	        transition: height .5s ease 0s, width .5s ease 0s;*/
+}
+
+.workUnit{
+	height: 350px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.workUnit .mainThumbnail{
+	width: 100%;
+	margin: 0 auto;
+	height: inherit;
+	z-index: 100;
+	position: relative;
+	top: 10px;
+	max-height: 250px;
+	background: #F9F9F9;
+	padding: 2px;
+	overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.workUnit .mainThumbnail img{
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.1) inset;
+	        box-shadow: 0px 0px 3px rgba(0,0,0,0.1) inset;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 2px;
+	background-color: #FFF;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+.workUnit .mainThumbnail img:hover{
+/*	-webkit-transform: translate(-50%, -50%) scale(1.05);
+	   -moz-transform: translate(-50%, -50%) scale(1.05);
+	    -ms-transform: translate(-50%, -50%) scale(1.05);
+	     -o-transform: translate(-50%, -50%) scale(1.05);
+	        transform: translate(-50%, -50%) scale(1.05);*/
+}
+
+.workUnit .mainDescription{
+	background-color: #FFF;
+	border: solid 1px #EEE;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+	position: relative;
+	top: -250px;
+	padding-top: 270px;
+	padding-bottom: 10px;
+	width: 95%;
+	padding-left: 0px;
+	margin: 0 auto;
+}
+
+.workUnit .mainDescription .wrap{
+	padding-right: 10px;
+	padding-left: 10px;	
+}
+
+.workTitle{
+	font-weight: bold;
+	font-size: 120%;
+	color: #333;
+	padding-bottom: 3px;
+	padding-left: 2px;
+	margin-bottom: 2px;
+}
+
+.workAuthor{
+	font-weight: normal;
+	font-size: 100%;
+	color: #666;
+	padding-left: 10px;
+}
+
+.workRegistDate{
+	font-weight: normal;
+	font-size: 75%;
+	text-align: right;
+	color: #999;
+	display: none;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+/* AuthorInfo-CSS */
+
+#aboutAuthor{
+}
+
+#aboutAuthor .main,
+#aboutAuthor .workList{
+	width: 100%;
+}
+
+#aboutAuthor .mainThumbnail,
+#aboutAuthor .mainDescription{
+	min-height: 200px;
+	display: table;
+}
+
+#aboutAuthor .snslList{
+	min-height: 100px;
+}
+
+#aboutAuthor .mainThumbnail{
+	position: relative;
+	overflow: hidden;
+	background-color: #FFF;
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+	        box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+}
+
+#aboutAuthor .mainThumbnail img{
+	width: 100%;
+	height: auto;
+	display: block;
+	padding: 2px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+#aboutAuthor .mainDescription .authorName{
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.snsList{
+	
+}
+
+.snsList ul{
+	padding: 20px 0px;
+	
+}
+
+.snsList ul li{ 
+	text-align: center;
+	padding: 0.5em;
+	background: #CCC;
+	color: #EEE;
+	min-height: 50px;
+}
+
+.snsList ul li.disbaled{
+	opacity: 0.5;
+}
+
+.snsList ul li.fb{
+	background-color: #3B5998;
+}
+
+.snsList ul li.tw{
+	background-color: #3CA9E9;
+}
+
+.snsList ul li.gp{
+	background-color: #CC6140;
+}
+
+.snsList ul li.other{
+	background-color: #999;
+}
+
+#aboutAuthorWorkList .workAuthor{
+	display: none;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+/* WorkInfo-CSS */
+
+#aboutWork{
+}
+
+#aboutWork .main,
+#aboutWork .sub{
+	padding-bottom: 20px;
+	border-bottom: solid 1px #CCC;
+}
+
+#aboutWork .mainThumbnail,
+#aboutWork .mainDescription{
+	height: 400px;
+	position: relative;
+}
+
+#aboutWork .mainThumbnail img{
+	width: 100%;
+	height: auto;
+	display: block;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 2px;
+	background-color: #FFF;
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+	        box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 991px){ /* 縦に並ぶとき */
+	
+	#aboutWork .mainThumbnail{
+		overflow: hidden;
+	}
+
+	#aboutWork .mainThumbnail img{
+		padding: 0;
+	}
+}
+
+#aboutWork .mainDescription{
+	padding-top: 70px;
+	padding-bottom: 150px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+#aboutWork .mainDescription .workTitle{
+	font-size: 200%;
+	text-align: center;
+	padding: 0px 0px 0px;
+}
+
+#aboutWork .mainDescription .workAuthor{
+	font-size: 150%;
+	text-align: center;
+	padding: 30px 0px 0px;
+}
+
+.skillList{
+	width: 100%;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.skillList li{
+	background-color: #CCC;
+	font-color: #333;
+	padding: 3px 10px;
+	margin: 5px 2px;
+	line-height: 120%;
+	-webkit-border-radius: 2px;
+	        border-radius: 2px;
+}
+
+#aboutWork .mainDescription .skillList{
+	height: 150px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 10px 30px;
+}
+
+/* -- */
+
+.subThumbnailList{
+	padding: 30px 20px;
+}
+
+.subThumbnailList li{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+	background: #FFF;
+	border: solid #FFF 3px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.subThumbnailList li img{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) scale(1);
+	   -moz-transform: translate(-50%, -50%) scale(1);
+	    -ms-transform: translate(-50%, -50%) scale(1);
+	     -o-transform: translate(-50%, -50%) scale(1);
+	        transform: translate(-50%, -50%) scale(1);
+	width: auto;
+	height: 100%;
+	-webkit-transition: -webkit-transform .5s ease 0s;
+	   -moz-transition: -moz-transform .5s ease 0s;
+	    -ms-transition: -ms-transform .5s ease 0s;
+	     -o-transition: -o-transform .5s ease 0s;
+	        transition: transform .5s ease 0s;
+}
+
+.subThumbnailList li:hover img{
+	-webkit-transform: translate(-50%, -50%) scale(0.8);
+	   -moz-transform: translate(-50%, -50%) scale(0.8);
+	    -ms-transform: translate(-50%, -50%) scale(0.8);
+	     -o-transform: translate(-50%, -50%) scale(0.8);
+	        transform: translate(-50%, -50%) scale(0.8);	
+}
+
+.subDescription{
+	padding: 20px;
+}
+
+.subDescription p{
+	background: #FFF;
+	padding: 20px;
+	line-height: 180%;
+}
+
+.subDescription p a{
+	font-weight: bold;
+	display: inline-block;
+	padding: 0em 0.5em;
+	line-height: 140%;
+	background-color: #EEE;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+/* Login-CSS */
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+/* registWork-CSS */
+
+/* ------------------------------------------------------------------------------------------ */
